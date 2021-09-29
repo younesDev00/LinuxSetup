@@ -3,7 +3,7 @@ sudo apt update --yes
 sudo apt upgrade --yes
 
 # Get Miniconda and make it the main Python interpreter
-wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda.sh
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda.sh
 bash ~/miniconda.sh -b -p ~/miniconda 
 rm ~/miniconda.sh
 
@@ -11,7 +11,6 @@ export PATH=~/miniconda/bin:$PATH
 
 conda create -n tf-gpu3 -y tensorflow-gpu pandas scikit-learn tqdm matplotlib ipykernel
 # conda env remove -n ENV_NAME
-
 wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
 sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
 sudo apt update
