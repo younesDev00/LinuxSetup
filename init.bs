@@ -30,4 +30,4 @@ code --install-extension ms-python.python
 sudo apt install firefox --yes
 
 # Docker
-sudo apt install docker --yes
+sudo apt install docker.io --yes
