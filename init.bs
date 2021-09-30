@@ -18,6 +18,8 @@ sudo apt update --yes
 sudo apt install code --yes
 
 export DONT_PROMPT_WSL_INSTALL=true
+echo "export DONT_PROMPT_WSL_INSTALL=true" >> .bashrc
+
 code --install-extension ms-toolsai.jupyter
 code --install-extension ms-python.python
 
