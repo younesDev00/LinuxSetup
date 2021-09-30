@@ -8,6 +8,7 @@ bash ~/miniconda.sh -b -p ~/miniconda
 rm ~/miniconda.sh
 
 export PATH=~/miniconda/bin:$PATH
+echo "export PATH=~/miniconda/bin:$PATH" >> .bashrc
 
 conda create -n tf-gpu -y tensorflow-gpu pandas scikit-learn tqdm matplotlib ipykernel
 # conda env remove -n ENV_NAME
