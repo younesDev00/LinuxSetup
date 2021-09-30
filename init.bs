@@ -7,12 +7,14 @@ printf "export PATH=~/miniconda3/bin:\$PATH \n" >> .bashrc
 #printf "export DONT_PROMPT_WSL_INSTALL=true" >> .bashrc
 
 # Get Miniconda and make it the main Python interpreter
-wget -q https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda.sh
+#wget -q https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda.sh
+wget -q https://repo.anaconda.com/miniconda/Miniconda3-py37_4.10.3-Linux-x86_64.sh -O ~/miniconda.sh
 bash ~/miniconda.sh -b -p ~/miniconda3
 rm ~/miniconda.sh
 
 export PATH=~/miniconda3/bin:$PATH
 
+conda init bash
 
 conda create -n tf-gpu -y tensorflow-gpu pandas scikit-learn tqdm matplotlib
 # conda env remove -n ENV_NAME
@@ -32,5 +34,4 @@ sudo apt install firefox --yes
 # Docker
 sudo apt install docker.io --yes
 
-conda init bash
-exit
+#exit
