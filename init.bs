@@ -4,7 +4,7 @@ sudo apt upgrade --yes
 
 printf "\n" >> .bashrc
 printf "export PATH=~/miniconda3/bin:\$PATH \n" >> .bashrc
-#printf "export DONT_PROMPT_WSL_INSTALL=true \n" >> .bashrc
+#printf "export DONT_PROMPT_WSL_INSTALL=true" >> .bashrc
 
 # Get Miniconda and make it the main Python interpreter
 wget -q https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda.sh
