@@ -1,4 +1,4 @@
-#setup Ubuntu
+# setup Ubuntu
 sudo apt update --yes
 sudo apt upgrade --yes
 
